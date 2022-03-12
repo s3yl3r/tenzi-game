@@ -1,0 +1,127 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #0b2434;
+    padding: 30px;
+    font-family: Karla, sans-serif;
+    font-size: 20px;
+}
+
+main {
+    background-color: #eeeeee;
+    border-radius: 12px;
+    width: 500px;
+    height: 70vh;
+    margin: auto;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.title {
+    font-size: 50px;
+    margin: 0 30px 40px 30px;
+}
+
+.instructions {
+    font-family: Arial, sans-serif;
+    font-weight: 400;
+    margin: 0 30px 20px 30px;
+    text-align: center;
+}
+
+.counters {
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.rollcount {
+    width: 40px;
+    height: 22px;
+    margin: 10px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 12px;
+}
+
+.rollbutton {
+    width: 160px;
+    height: 50px;
+    background-color: #21587a;
+    color: white;
+    border-radius: 4px;
+    border: none;
+    margin: 40px 20px 0 20px;
+    cursor: pointer;
+    font-family: Karla, sans-serif;
+    font-size: 1.4rem;
+}
+
+.first-face {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.die {
+    padding: 6px;
+    width: 52px;
+    height: 52px;
+    border-radius: 4px;
+    box-shadow: 2px 2px 2px #858585;
+    cursor: pointer;
+}
+
+.dot{
+    display: block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: black;
+}
+  
+.second-face{
+    display: flex ;
+    justify-content: space-between;
+}
+  
+.second-face .dot:nth-of-type(2) {
+    align-self: flex-end;
+}
+  
+.third-face {
+    display: flex;
+    justify-content: space-between;
+}
+  
+.third-face .dot:nth-of-type(1) {
+    align-self :flex-end;
+}
+  
+.third-face .dot:nth-of-type(2) {
+    align-self :center;
+}
+  
+.fourth-face , .sixth-face, .fifth-face{
+    display: flex;
+    justify-content: space-between;
+}
+  
+.fourth-face .column , .sixth-face .column, .fifth-face .column{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+  
+.fifth-face .column:nth-of-type(2) {
+    justify-content: center;
+}
